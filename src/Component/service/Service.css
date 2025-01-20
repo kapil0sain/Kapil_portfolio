@@ -1,0 +1,111 @@
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 170px;
+    gap: 80px;
+}
+.service-title{
+    position: relative;
+}
+.service-title h1{
+    padding: 0px 30px;
+    font-weight: 600;
+    font-size: 80px;
+
+}
+.service-title img{
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    z-index: -1;
+}
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+.service-format{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.9;
+
+}
+.service-format h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.service-format h2{
+    font-size: 30px;
+    font-weight: 800;
+    background: linear-gradient(267deg,#da7c23 0.35%, #b232e1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* .service-format:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.12);
+} */
+ .service-format{
+    line-height: 35px;
+    max-width: 300px;
+    color: #d4d4d4;
+    font-size: 24px;
+ }
+ .service-readmore{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+
+ }
+ .service-format:hover{
+    background: 2px solid #ff00ff;
+    background: linear-gradient(45deg,#3f0028,#582300);
+    transform: scale(1.05);
+    transition: 0.4s;
+ }
+ @media(max-width:768px){
+    .services{
+        gap: 70px;
+        align-items: start;
+        margin: 20px 70px;
+    }
+    .service-title h1{
+        padding: 0px;
+        font-size: 50px;
+    }
+    .service-title img{
+        width: 130px;
+        margin-right: -20px;
+    }
+    .service-format{
+        gap: 20px;
+        padding: 32px;
+    }
+    .service-format h2{
+        font-size: 28px;
+    }
+    .service-format p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+    .service-readmore img{
+        width: 20px;
+    }
+    .service-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+ }
